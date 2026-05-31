@@ -6,5 +6,8 @@
 
 LOCAL_PATH := $(call my-dir)
 
+# SELinux
+BOARD_VENDOR_SEPOLICY_DIRS += $(LOCAL_PATH)/sepolicy/vendor
+
 # Inherit from the proprietary version
 include vendor/advan/advancamera-X1/BoardConfigVendor.mk
