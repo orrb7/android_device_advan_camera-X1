@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2024 The LineageOS Project
+  SPDX-License-Identifier: Apache-2.0
+-->
+<permissions>
+    <privapp-permissions package="com.advan.extraphoto">
+        <permission name="android.permission.CAMERA" />
+        <permission name="android.permission.READ_MEDIA_IMAGES" />
+        <permission name="android.permission.READ_MEDIA_VIDEO" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    </privapp-permissions>
+</permissions>
+

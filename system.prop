@@ -1,9 +1,13 @@
-# Google Lens
-ro.com.google.lens.oem_camera_package=com.android.camera
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
 
-# Framework allowlists
-persist.vendor.camera.privapp.list=com.android.camera
-#vendor.camera.aux.packagelist=com.android.camera
+# Camera identity
+ro.product.mod_device=ADVAN_X1
 
-# MiuiCamera
-ro.miui.notch=1
+# MTK Camera props (Helio G100 / MT6789)
+ro.mtk_cam_feature_aosp_eis.support=1
+ro.media.recorder-max-base-layer-fps=60
+ro.mtk_cam3_hybrid_ev_support=1

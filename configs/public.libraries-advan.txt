@@ -1,0 +1,4 @@
+libarcsoft_dof_video.so
+libarcsoft_high_dynamic_range.so
+libarcsoft_supernight.so
+libarcsoft_beauty_shot.so

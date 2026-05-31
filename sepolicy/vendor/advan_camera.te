@@ -1,0 +1,12 @@
+# Copyright (C) 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+
+# Allow advan camera app to use camera HAL
+allow priv_app camera_device:chr_file { read write };
+allow priv_app mtk_cam_server:unix_stream_socket connectto;
+
+# Allow camera to access MTK ISP
+allow hal_camera_default mtk_isp_device:chr_file { read write ioctl };
+
+# Allow camera to use gralloc
+allow priv_app hal_graphics_allocator:fd use;

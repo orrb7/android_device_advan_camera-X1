@@ -1,0 +1,31 @@
+# Copyright (C) 2024 The LineageOS Project
+# SPDX-License-Identifier: Apache-2.0
+
+# Allow priv_app (com.mediatek.camera)
+allow priv_app system_ext_file:file { read open execute map };
+allow priv_app system_ext_file:dir { read open search };
+
+# Allow camera access
+allow priv_app hal_camera:binder { call transfer };
+allow priv_app hal_camera_default:binder { call transfer };
+
+# Allow camera access MTK APU/MVPU service (AI inference)
+allow priv_app mtk_apu_device:chr_file { read write ioctl open };
+allow priv_app hal_neuralnetworks:binder call;
+
+# Allow camera access sensor (face detection, dsb)
+allow priv_app sensors_device:chr_file { read write ioctl open };
+
+# Allow video recording via audio HAL
+allow priv_app hal_audio:binder call;
+
+# Allow camera  media storage
+allow priv_app media_rw_data_file:dir { read write add_name search getattr };
+allow priv_app media_rw_data_file:file { read write create getattr setattr open };
+
+# Allow cameraserver for system_ext priv_app
+allow cameraserver priv_app:fd use;
+allow cameraserver priv_app:unix_stream_socket { read write };
+
+# Allow OpenCV JNI load
+allow priv_app vendor_file:file { read open execute map };

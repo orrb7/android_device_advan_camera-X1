@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  Copyright (C) 2024 The LineageOS Project
+  SPDX-License-Identifier: Apache-2.0
+
+  Privapp permissions untuk com.mediatek.camera
+  APK: system_ext/app/PriCamera/PriCamera.apk
+  Device: Advan X1 (MT6789 / Helio G100)
+-->
+<permissions>
+    <privapp-permissions package="com.mediatek.camera">
+        <permission name="android.permission.CAMERA" />
+        <permission name="android.permission.RECORD_AUDIO" />
+        <permission name="android.permission.READ_EXTERNAL_STORAGE" />
+        <permission name="android.permission.WRITE_EXTERNAL_STORAGE" />
+        <permission name="android.permission.READ_MEDIA_IMAGES" />
+        <permission name="android.permission.READ_MEDIA_VIDEO" />
+        <permission name="android.permission.MANAGE_MEDIA" />
+        <permission name="android.permission.ACCESS_FINE_LOCATION" />
+        <permission name="android.permission.ACCESS_COARSE_LOCATION" />
+        <permission name="android.permission.VIBRATE" />
+        <permission name="android.permission.FLASHLIGHT" />
+        <permission name="android.permission.MODIFY_AUDIO_SETTINGS" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.WRITE_SETTINGS" />
+        <permission name="android.permission.ACCESS_NETWORK_STATE" />
+        <permission name="android.permission.INTERNET" />
+    </privapp-permissions>
+</permissions>

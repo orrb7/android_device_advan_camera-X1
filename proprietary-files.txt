@@ -1,8 +1,106 @@
-# All unpinned blobs below are extracted from zeus V14.0.7.0.TLBMIXM
+# Advan X1 (ADVAN_X1) (UP1A.231005.007)
+system_ext/app/PriCamera/PriCamera.apk;OVERRIDES=Aperture,Snap,Camera2,GoogleCameraGo
+system_ext/app/PriCamera/lib/arm64/libBSTFaceDetction.so
+system_ext/app/PriCamera/lib/arm64/libBSTSingleAIDoc.so
+system_ext/app/PriCamera/lib/arm64/libBstStick2D.so
+system_ext/app/PriCamera/lib/arm64/libc++_shared.so
+system_ext/app/PriCamera/lib/arm64/libjniBstAiDoc.so
+system_ext/app/PriCamera/lib/arm64/libjniBstSticker.so
+system_ext/app/PriCamera/lib/arm64/libjni_bstbeauty.so
+system_ext/app/PriCamera/lib/arm64/libjni_bstfilter.so
+system_ext/app/PriCamera/lib/arm64/libjni_bstportrait.so
+system_ext/app/PriCamera/lib/arm64/libjni_uvpanorama.so
+system_ext/app/PriCamera/lib/arm64/libopencv_java4.so
 
-product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk|962075aefbc57006f05aabf79cfdfc96e5bf0682
-system/etc/public.libraries-xiaomi.txt
-system/lib64/libcamera_algoup_jni.xiaomi.so
-system/lib64/libcamera_mianode_jni.xiaomi.so
-system/lib64/libmicampostproc_client.so
-system/lib64/vendor.xiaomi.hardware.campostproc@1.0.so
+# MVPU runtime & engine (MT6789 NPU/APU)
+system_ext/lib64/libmvpu_clc_mvpu_utility.mtk.so
+system_ext/lib64/libmvpu_config.mtk.so
+system_ext/lib64/libmvpu_engine.mtk.so
+system_ext/lib64/libmvpu_engine_25.mtk.so
+system_ext/lib64/libmvpu_engine_25_pub.mtk.so
+system_ext/lib64/libmvpu_engine_pub.mtk.so
+system_ext/lib64/libmvpu_pattern.mtk.so
+system_ext/lib64/libmvpu_pattern_25.mtk.so
+system_ext/lib64/libmvpu_pattern_25_pub.mtk.so
+system_ext/lib64/libmvpu_pattern_pub.mtk.so
+system_ext/lib64/libmvpu_runtime.mtk.so
+system_ext/lib64/libmvpu_runtime_25.mtk.so
+system_ext/lib64/libmvpu_runtime_25_pub.mtk.so
+system_ext/lib64/libmvpu_runtime_builtin.mtk.so
+system_ext/lib64/libmvpu_runtime_builtin_25.mtk.so
+system_ext/lib64/libmvpu_runtime_pub.mtk.so
+system_ext/lib64/libmvpuop25_mtk_cv.mtk.so
+system_ext/lib64/libmvpuop25_mtk_nn.mtk.so
+system_ext/lib64/libmvpuop_mtk_cv.mtk.so
+system_ext/lib64/libmvpuop_mtk_nn.mtk.so
+
+# Neuron / NeuroPilot (APU inference stack)
+system_ext/lib64/libneuron_graph_delegate.mtk.so
+system_ext/lib64/libneuronusdk_adapter.mtk.so
+system_ext/lib64/libneuropilot_hal_utils.so
+system_ext/lib64/libnir_neon_driver_ndk.mtk.so
+
+# OpenCV (shared dengan PriCamera lib)
+system_ext/lib64/libopencv_java4.so
+
+# Misc system_ext libs
+system_ext/lib64/libnativecheck-jni.so
+system_ext/lib64/libperfctl.so
+system_ext/lib64/libpowerhalwrap.so
+system_ext/lib64/libpowerhalwrap_jni.so
+system_ext/lib64/libsf_cpupolicy.so
+system_ext/lib64/libsf_debug.so
+system_ext/lib64/libsf_perf.so
+system_ext/lib64/libsysenv_system.so
+
+# Vendor MediaTek HIDL/AIDL interfaces (system_ext side)
+system_ext/lib64/vendor.mediatek.framework.mtksf_ext-V3-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.aee-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.aee@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.aee@1.1.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys-V3-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.apusys@2.1.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.hmp@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.utils@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.apuware.xrp@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.audio-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.audio@7.1.so
+system_ext/lib64/vendor.mediatek.hardware.audio@8.1.so
+system_ext/lib64/vendor.mediatek.hardware.composer_ext-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.composer_ext@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.lbs@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.log-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.log@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.mbrain-V2-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.mms@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.mms@1.1.so
+system_ext/lib64/vendor.mediatek.hardware.mms@1.2.so
+system_ext/lib64/vendor.mediatek.hardware.mms@1.3.so
+system_ext/lib64/vendor.mediatek.hardware.mtkpower-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.1.so
+system_ext/lib64/vendor.mediatek.hardware.mtkpower@1.2.so
+system_ext/lib64/vendor.mediatek.hardware.mtkpower_applist-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.mtkradioex.rsu-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.mtkradioex.se-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.mtkradioex.sim-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.mtkradioex@3.0.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.0.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.1.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.2.so
+system_ext/lib64/vendor.mediatek.hardware.pq@2.3.so
+system_ext/lib64/vendor.mediatek.hardware.pq_aidl-V2-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.touchll@1.0.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
+system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
+
+# ============================================================
+# Permissions (system_ext/etc/permissions/)
+# ============================================================
+system_ext/etc/permissions/privapp-permissions-com.mediatek.camera.xml
+

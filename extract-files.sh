@@ -1,17 +1,15 @@
-#!/bin/bash
+#!/usr/bin/env bash
 #
-# Copyright (C) 2016 The CyanogenMod Project
-# Copyright (C) 2017-2020 The LineageOS Project
+# Copyright (C) 2024 The LineageOS Project
 #
 # SPDX-License-Identifier: Apache-2.0
 #
 
 set -e
 
-DEVICE=miuicamera-zeus
-VENDOR=xiaomi
+DEVICE=advancamera-X1
+VENDOR=advan
 
-# Load extract_utils and do some sanity checks
 MY_DIR="${BASH_SOURCE%/*}"
 if [[ ! -d "${MY_DIR}" ]]; then MY_DIR="${PWD}"; fi
 
@@ -24,9 +22,7 @@ if [ ! -f "${HELPER}" ]; then
 fi
 source "${HELPER}"
 
-# Default to sanitizing the vendor folder before extraction
 CLEAN_VENDOR=true
-
 KANG=
 SECTION=
 
@@ -40,7 +36,6 @@ while [ "${#}" -gt 0 ]; do
                 ;;
         -s | --section )
                 SECTION="${2}"; shift
-                CLEAN_VENDOR=false
                 ;;
         * )
                 SRC="${1}"
@@ -55,18 +50,25 @@ fi
 
 function blob_fixup() {
     case "${1}" in
-        system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
-            "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
+        # Fix soname untuk lib BST AI yang mungkin punya soname salah
+        system_ext/app/PriCamera/lib/arm64/libBSTFaceDetction.so | \
+        system_ext/app/PriCamera/lib/arm64/libBSTSingleAIDoc.so | \
+        system_ext/app/PriCamera/lib/arm64/libBstStick2D.so)
+            "${PATCHELF}" --set-soname "$(basename "${2}")" "${2}"
             ;;
-        system/lib64/libmicampostproc_client.so)
-            "${PATCHELF}" --remove-needed "libhidltransport.so" "${2}"
+        # Fix soname untuk libmvpu (nama file pakai .mtk.so)
+        system_ext/lib64/libmvpu_engine.mtk.so | \
+        system_ext/lib64/libmvpu_runtime.mtk.so | \
+        system_ext/lib64/libmvpu_pattern.mtk.so | \
+        system_ext/lib64/libmvpu_config.mtk.so)
+            "${PATCHELF}" --set-soname "$(basename "${2}")" "${2}"
             ;;
     esac
 }
 
-# Initialize the helper
-setup_vendor "${DEVICE}" "${VENDOR}" "${ANDROID_ROOT}" false "${CLEAN_VENDOR}"
+setup_env "${SRC}" "${CLEAN_VENDOR}"
 
 extract "${MY_DIR}/proprietary-files.txt" "${SRC}" "${KANG}" --section "${SECTION}"
 
 "${MY_DIR}/setup-makefiles.sh"
+
