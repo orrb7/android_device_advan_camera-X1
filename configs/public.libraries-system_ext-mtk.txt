@@ -1,16 +1,29 @@
-# Public libraries dari system_ext yang boleh di-load oleh com.mediatek.camera
-# MediaTek MT6789 (Helio G100) - Advan X1
 libmvpu_engine.mtk.so
+libmvpu_engine_25.mtk.so
+libmvpu_engine_25_pub.mtk.so
 libmvpu_engine_pub.mtk.so
 libmvpu_runtime.mtk.so
+libmvpu_runtime_25.mtk.so
+libmvpu_runtime_25_pub.mtk.so
+libmvpu_runtime_builtin.mtk.so
+libmvpu_runtime_builtin_25.mtk.so
 libmvpu_runtime_pub.mtk.so
 libmvpu_pattern.mtk.so
+libmvpu_pattern_25.mtk.so
+libmvpu_pattern_25_pub.mtk.so
 libmvpu_pattern_pub.mtk.so
 libmvpu_config.mtk.so
+libmvpu_clc_mvpu_utility.mtk.so
 libmvpuop_mtk_cv.mtk.so
 libmvpuop_mtk_nn.mtk.so
+libmvpuop25_mtk_cv.mtk.so
+libmvpuop25_mtk_nn.mtk.so
 libneuronusdk_adapter.mtk.so
 libneuropilot_hal_utils.so
+libneuron_graph_delegate.mtk.so
+libnir_neon_driver_ndk.mtk.so
 libopencv_java4.so
 libperfctl.so
 libpowerhalwrap.so
+libpowerhalwrap_jni.so
+libsysenv_system.so

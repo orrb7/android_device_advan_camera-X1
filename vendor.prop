@@ -1,3 +1,14 @@
+#
+# Copyright (C) 2024 The LineageOS Project
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+vendor.camera.hal1.packagelist=com.mediatek.camera
+vendor.mtk.camera.app.packagename=com.mediatek.camera
+persist.vendor.camera3.pipeline.bufnum.base.imgo=4
+persist.vendor.camera3.pipeline.bufnum.base.rrzo=4
+
 # MTK Thumbnail Optimization
 vendor.mtk_thumbnail_optimization=true
 

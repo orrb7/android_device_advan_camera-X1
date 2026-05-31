@@ -14,13 +14,12 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/com.mediatek.camera-hiddenapi-package-allowlist.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/sysconfig/com.mediatek.camera-hiddenapi-package-allowlist.xml
 
-# system_ext lib644
+# system_ext lib64
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/public.libraries-system_ext-mtk.txt:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/public.libraries-mtk.txt
 
-STICKER_FILES := $(shell find vendor/advan/advancamera-X1/proprietary/system/media/sticker -type f)
 PRODUCT_COPY_FILES += \
-    $(foreach f,$(STICKER_FILES),$(f):$(subst vendor/advan/advancamera-X1/proprietary/,,$(f)))
+    $(call find-copy-subdir-files,*,$(LOCAL_PATH)/proprietary/system/media/sticker,$(TARGET_COPY_OUT_SYSTEM)/media/sticker)
 
 TARGET_VENDOR_PROP += vendor/advan/advancamera-X1/vendor.prop
 TARGET_SYSTEM_PROP += vendor/advan/advancamera-X1/system.prop

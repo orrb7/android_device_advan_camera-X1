@@ -1,4 +1,10 @@
-libarcsoft_dof_video.so
-libarcsoft_high_dynamic_range.so
-libarcsoft_supernight.so
-libarcsoft_beauty_shot.so
+libBSTFaceDetction.so
+libBSTSingleAIDoc.so
+libBstStick2D.so
+libjniBstAiDoc.so
+libjniBstSticker.so
+libjni_bstbeauty.so
+libjni_bstfilter.so
+libjni_bstportrait.so
+libjni_uvpanorama.so
+libopencv_java4.so
