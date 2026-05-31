@@ -1,0 +1,26 @@
+# MTK Thumbnail Optimization
+vendor.mtk_thumbnail_optimization=true
+
+# ArcSoft Engine Toggles
+ro.odm.nightshot.arcsoft=1
+ro.odm.camera.supernight=1
+ro.odm.selfie.arcsoft=1
+ro.odm.hdr.arcsoft=1
+ro.odm.front.hdr.support=1
+ro.odm.autohdr=1
+
+# PriCamera Features & AR Sticker Support
+ro.odm.camera.sticker_support=1
+ro.odm.camera.smartscanmode=1
+ro.odm.camera.gifmode=1
+ro.odm.camera.filmmode=1
+ro.odm.ai.scene=1
+ro.odm.ai.scene_title=1
+ro.odm.camera_fn_facebeauty=1
+
+# Hardware Sensor Configuration
+ro.odm.camera.rear.resolution=64M
+ro.odm.picturezoom.mode.name=64MP
+ro.odm.backmaxzoom=4
+ro.odm.preview.matchscreen=1
+ro.odm.zsd_hide=1

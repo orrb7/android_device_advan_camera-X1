@@ -12,6 +12,27 @@ system_ext/app/PriCamera/lib/arm64/libjni_bstportrait.so
 system_ext/app/PriCamera/lib/arm64/libjni_uvpanorama.so
 system_ext/app/PriCamera/lib/arm64/libopencv_java4.so
 
+# PriCamera AR Sticker Assets
+system/media/sticker/expressionsticker_01_cat
+system/media/sticker/expressionsticker_02_rabbit
+system/media/sticker/expressionsticker_03_fox
+system/media/sticker/expressionsticker_04_elf
+system/media/sticker/expressionsticker_05_panda
+system/media/sticker/expressionsticker_06_demon
+system/media/sticker/expressionsticker_07_ox
+system/media/sticker/expressionsticker_08_pig
+system/media/sticker/expressionsticker_09_Headdress
+system/media/sticker/expressionsticker_10_Cartoon
+system/media/sticker/expressionsticker_11_hat
+system/media/sticker/expressionsticker_12_clown
+system/media/sticker/expressionsticker_13_astronaut
+system/media/sticker/expressionsticker_14_Princess
+system/media/sticker/expressionsticker_15_girl
+system/media/sticker/frame_01
+system/media/sticker/frame_02
+system/media/sticker/frame_03
+
+
 # MVPU runtime & engine (MT6789 NPU/APU)
 system_ext/lib64/libmvpu_clc_mvpu_utility.mtk.so
 system_ext/lib64/libmvpu_config.mtk.so

@@ -11,3 +11,9 @@ ro.product.mod_device=ADVAN_X1
 ro.mtk_cam_feature_aosp_eis.support=1
 ro.media.recorder-max-base-layer-fps=60
 ro.mtk_cam3_hybrid_ev_support=1
+
+# Codec & Thumbnail Optimization
+media.stagefright.thumbnail.prefer_hw_codecs=true
+
+# Framework Windowing Support
+persist.sys.phonewindow=1
