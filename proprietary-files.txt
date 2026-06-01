@@ -5,30 +5,24 @@
 # Copyright (C) 2024 The LineageOS Project
 # SPDX-License-Identifier: Apache-2.0
 
-# ============================================================
-# Camera APK
-# ============================================================
 system_ext/app/PriCamera/PriCamera.apk;OVERRIDES=Aperture,Snap,Camera2,GoogleCameraGo
+system_ext/lib64/libBSTBeautyAPK.so
+system_ext/lib64/libBSTFaceDetction.so
+system_ext/lib64/libBSTSingleAIBokeh.so
+system_ext/lib64/libBSTSingleAIDoc.so
+system_ext/lib64/libBstStick2D.so
+system_ext/lib64/libc++_shared.so
+system_ext/lib64/libjniBstAiDoc.so
+system_ext/lib64/libjniBstSticker.so
+system_ext/lib64/libjni_bstbeauty.so
+system_ext/lib64/libjni_bstfilter.so
+system_ext/lib64/libjni_bstportrait.so
+system_ext/lib64/libjni_uvpanorama.so
+system_ext/lib64/libUvPanorama.so
+system_ext/lib64/libopencv_java4.so
 
-# ============================================================
-# JNI libs dalam APK - system_ext/app/PriCamera/lib/arm64/
-# ============================================================
-system_ext/app/PriCamera/lib/arm64/libBSTFaceDetction.so
-system_ext/app/PriCamera/lib/arm64/libBSTSingleAIDoc.so
-system_ext/app/PriCamera/lib/arm64/libBstStick2D.so
-system_ext/app/PriCamera/lib/arm64/libc++_shared.so
-system_ext/app/PriCamera/lib/arm64/libjniBstAiDoc.so
-system_ext/app/PriCamera/lib/arm64/libjniBstSticker.so
-system_ext/app/PriCamera/lib/arm64/libjni_bstbeauty.so
-system_ext/app/PriCamera/lib/arm64/libjni_bstfilter.so
-system_ext/app/PriCamera/lib/arm64/libjni_bstportrait.so
-system_ext/app/PriCamera/lib/arm64/libjni_uvpanorama.so
-system_ext/app/PriCamera/lib/arm64/libopencv_java4.so
+# AR Sticker Assets 
 
-# ============================================================
-# AR Sticker Assets - system/media/sticker/ (1544 files)
-# Source: system/system/media/sticker/ di dump
-# ============================================================
 system/media/sticker/expressionsticker_01_cat/cat/cat.txt
 system/media/sticker/expressionsticker_01_cat/cat/ear/ear_000.png
 system/media/sticker/expressionsticker_01_cat/cat/ear/ear_001.png
@@ -1663,7 +1657,6 @@ system_ext/lib64/vendor.mediatek.hardware.touchll@1.0.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony-V1-ndk.so
 system_ext/lib64/vendor.mediatek.hardware.videotelephony@1.0.so
 
-# ============================================================
 # Permissions
-# ============================================================
+
 system_ext/etc/permissions/privapp-permissions-com.mediatek.camera.xml
